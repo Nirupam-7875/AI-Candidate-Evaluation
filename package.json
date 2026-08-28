@@ -1,0 +1,14 @@
+{
+  "name": "ai-candidate-evaluator",
+  "version": "1.0.0",
+  "description": "Multi-Agent AI Candidate Evaluation System",
+  "scripts": {
+    "server": "cd server && node server.js",
+    "client": "cd client && npm run dev",
+    "install:all": "cd server && npm install && cd ../client && npm install",
+    "dev": "npx concurrently \"npm run server\" \"npm run client\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
